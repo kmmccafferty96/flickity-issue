@@ -1,0 +1,38 @@
+.carousel {
+  height: 400px;
+  width: 100%;
+}
+
+.carousel-cell {
+  background-image: url("src\assets\smiley.png");
+  background-position: 50% 50%;
+  background-size: cover;
+  z-index: 800;
+  height: 100%;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.carousel-cell::before {
+  background-color: #191919;
+  bottom: 0;
+  content: '';
+  left: 0;
+  opacity: 0.6;
+  position: absolute;
+  right: 0;
+  top: 0;
+  z-index: 1;
+}
+
+.is-selected .carousel-cell {
+  opacity: 1;
+}
+
+.carousel-main {
+  text-align: center;
+  z-index: 999;
+  color: white
+}

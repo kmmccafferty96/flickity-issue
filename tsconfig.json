@@ -19,12 +19,16 @@
     "lib": [
       "es2018",
       "dom"
-    ]
+    ],
+    "typeRoots": ["node_modules/@types/"],
+    "types": ["node"]
   },
   "angularCompilerOptions": {
     "enableI18nLegacyMessageIdFormat": false,
     "strictInjectionParameters": true,
     "strictInputAccessModifiers": true,
-    "strictTemplates": true
+    "strictTemplates": true,
+    "typeRoots": ["node_modules/@types/"],
+    "types": ["node"]
   }
 }
